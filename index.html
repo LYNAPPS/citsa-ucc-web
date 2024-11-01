@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edutics</title>
+    <link rel="shortcut icon" href="favicon.svg" type="image/x-icon">
+
+    <!-- plugins & libraries css -->
+    <link rel="stylesheet" href="assets/vendor/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/vendor/font-awesome/all.min.css">
+
+    <!-- tailwind css -->
+    <link rel="stylesheet" href="assets/output.css">
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+
+</head>
+
+<body style="background-color: rgba(253, 253, 253, 0.5);">
+
+    <!-- sidebar -->
+    <div class="ed-sidebar">
+        <div
+            class="translate-x-[100%] transition-transform ease-linear duration-300 fixed right-0 w-full max-w-[25%] xl:max-w-[30%] lg:max-w-[40%] md:max-w-[50%] sm:max-w-[60%] xxs:max-w-full bg-white h-full z-[100] overflow-auto">
+            <!-- heading -->
+            <div class="ed-sidebar-heading p-[20px] lg:p-[20px] border-b border-edgray/20">
+                <div class="logo flex justify-between items-center">
+                    <a href="index.html"><img src="assets/img/logo.png" alt="logo"></a>
+
+                    <button type="button"
+                        class="ed-sidebar-close-btn border border-edgray/20 w-[45px] aspect-square shrink-0 text-black text-[22px] rounded-full hover:text-edpurple"><i
+                            class="fa-solid fa-xmark"></i></button>
+                </div>
+            </div>
+
+            <!-- mobile menu -->
+            <div class="ed-header-nav-in-mobile"></div>
+        </div>
+    </div>
+
+
+
+    <!-- HEADER SECTION START -->
+    <header
+        class="bg-edblue ed-header--2 relative z-[2] px-[7.9%] xxxxl:px-[6.5%] xxxl:px-[1%] lg:px-[15px] py-[25px] xxs:py-[16px] flex items-center justify-between to-be-fixed">
+        <div class="logo xxs:max-w-[40%]"><a href="index.html">
+                <!-- <img src="assets/img/logo-light.png" alt="logo"
+                    class="logo"></a> -->
+        </div>
+
+        <div class="flex lg:items-center lg:gap-[30px]">
+            <div class="flex lg:flex-col items-center gap-[60px] xxl:gap-[25px] xl:gap-[30px] md:gap-y-[15px]">
+                <!-- search form -->
+
+
+                <!-- nav -->
+                <ul
+                    class="to-go-to-sidebar-in-mobile ed-header-nav flex lg:flex-col gap-x-[43px] xxl:gap-x-[33px] font-kanit text-[17px] font-normal">
+
+                    <li><a href="about.html">Home</a></li>
+                    <li><a href="about.html">About us</a></li>
+                    <li class="has-sub-menu relative">
+                        <a role="button">Members</a>
+
+                        <ul class="ed-header-submenu">
+                            <li><a href="course-grid.html">Courses Grid</a></li>
+                            <li><a href="course-filter.html">Courses Filter</a></li>
+                            <li><a href="course-details.html">Course Details</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="about.html">Program</a></li>
+
+                    <li><a href="contact.html">Contact us</a></li>
+
+                </ul>
+
+                <!-- right actions -->
+                <div class="flex items-center gap-x-[60px] xxl:gap-x-[25px] lg:gap-x-[20px]">
+
+                    <a href="contact.html" class="ed-btn to-go-to-sidebar-in-mobile lg:m-[20px]"
+                        style="border-radius: 8px !important;">Sign
+                        In</a>
+                </div>
+            </div>
+
+            <!-- mobile menu button -->
+            <button type="button" class="ed-mobile-menu-open-btn hidden lg:inline-block text-white text-[18px]"><i
+                    class="fa-solid fa-bars"></i></button>
+        </div>
+    </header>
+    <!-- HEADER SECTION END -->
+
+    <main>
+        <!-- BANNER SECTION START -->
+        <section>
+            <div class="ed-banner-slider swiper relative">
+                <div class="swiper-wrapper">
+                    <!-- single slide -->
+                    <div class="swiper-slide">
+                        <div class="bg-no-repeat bg-center bg-cover relative z-[1] before:absolute before:-z-[1] before:inset-0 before:bg-edblue/70 before:pointer-events-none"
+                            style="background: url('assets/img/banner-try.png'); background-size: cover; background-position: right; background-repeat: no-repeat;">
+                            <div style="padding-top: 100px; padding-bottom: 100px;" class="mx-[10%] md:mx-[15px]">
+                                <div class="text-white w-[48%] xl:w-[60%] md:w-[70%] sm:w-[80%] xs:w-full">
+                                    <h6 class="font-medium uppercase tracking-[3px] mb-[16px]">Welcome to
+                                        <span class="text-edyellow">CITSA UCC</span>
+                                    </h6>
+                                    <h2 class="font-bold leading-[1.13] mb-[15px]"
+                                        style="font-size: clamp(25px, 4.5vw, 65px);">The
+                                        Promoting Development Through Technology</h2>
+                                    <p class="leading-[1.75] mb-[41px]" style="font-size: clamp(5px, 4.5vw, 12px);">
+                                        Smply dummy text of the printing and typesetting
+                                        industry. Lorem Ipsum has been the industry’s standard dummy text ever since the
+                                        1500s, when an unknown printer took a galley of type and scrambled</p>
+                                    <div class="flex items-center gap-[20px]">
+                                        <a href="contact.html" class="ed-btn">Apply now</a>
+                                        <a href="about.html"
+                                            class="ed-btn !bg-transparent border border-white hover:!bg-white hover:text-edpurple">About
+                                            us</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="bg-no-repeat bg-center bg-cover relative z-[1] before:absolute before:-z-[1] before:inset-0 before:bg-edblue/70 before:pointer-events-none"
+                            style="background: url('assets/img/banner-try.png'); background-size: cover; background-position: right; background-repeat: no-repeat;">
+                            <div style="padding-top: 100px; padding-bottom: 100px;" class="mx-[10%] md:mx-[15px]">
+                                <div class="text-white w-[48%] xl:w-[60%] md:w-[70%] sm:w-[80%] xs:w-full">
+                                    <h6 class="font-medium uppercase tracking-[3px] mb-[16px]">Welcome to
+                                        <span class="text-edyellow">CITSA UCC</span>
+                                    </h6>
+                                    <h2 class="font-bold leading-[1.13] mb-[15px]"
+                                        style="font-size: clamp(25px, 4.5vw, 65px);">The
+                                        Promoting Development Through Technology</h2>
+                                    <p class="leading-[1.75] mb-[41px]" style="font-size: clamp(5px, 4.5vw, 12px);">
+                                        Smply dummy text of the printing and typesetting
+                                        industry. Lorem Ipsum has been the industry’s standard dummy text ever since the
+                                        1500s, when an unknown printer took a galley of type and scrambled</p>
+                                    <div class="flex items-center gap-[20px]">
+                                        <a href="contact.html" class="ed-btn">Apply now</a>
+                                        <a href="about.html"
+                                            class="ed-btn !bg-transparent border border-white hover:!bg-white hover:text-edpurple">About
+                                            us</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- nav -->
+                <div
+                    class="ed-banner-slider-nav absolute z-[1] top-[50%] xs:top-[80%] right-[130px] md:right-[60px] sm:right-[40px] xs:hidden flex flex-col gap-[15px] *:w-[40px] *:h-[40px] *:rounded-full *:border *:border-white/20 *:text-white *:text-[18px]">
+                    <button class="prev hover:bg-edyellow hover:border-edyellow hover:text-black"><i
+                            class="fa-solid fa-angle-up"></i></button>
+                    <button class="next leading-[43px] hover:bg-edyellow hover:border-edyellow hover:text-black"><i
+                            class="fa-solid fa-angle-down"></i></button>
+                </div>
+            </div>
+        </section>
+        <!-- BANNER SECTION END -->
+
+        <!-- ABOUT SECTION START -->
+        <section class="py-[120px] xl:py-[80px] md:py-[60px]">
+            <div class="mx-[19.71%] xxxl:mx-[14.71%] xxl:mx-[9.71%] xl:mx-[5.71%] md:mx-[12px]">
+                <div class="flex md:flex-col justify-between items-center gap-x-[60px] xl:gap-x-[40px] gap-y-[40px]">
+                    <!-- img -->
+                    <div class="max-w-[50%] md:max-w-full grow relative">
+                        <img src="assets/img/about-img.png" alt="about image">
+                    </div>
+
+                    <!-- txt -->
+                    <div class="max-w-[50%] md:max-w-full shrink-0 grow">
+                        <h6 class="ed-section-sub-title">about us</h6>
+                        <h2 class="ed-section-title mb-[9px]" style="font-size: clamp(30px, 4.5vw, 50px);"> Know More
+                            About CITSA UCC</h2>
+                        <p class="text-edgray mb-[30px]">Lorem ipsum dolor sit amet consectetur. Tellus amet vitae
+                            molestie mauris
+                            nunc malesuada erat orci. Tortor augue suscipit vulputate mauris lectus aliquam dui orci.
+                            Vestibulum mi id id nunc varius. Nisi velit sed amet massa. Lobortis odio nulla quis laoreet
+                            quisque dis quis tristique mollis. Elit luctus interdum id amet odio rhoncus varius. Nunc
+                            sit pulvinar etiam laoreet morbi.</p>
+                        <!-- infos -->
+
+                        <div class="flex flex-wrap items-center gap-x-[24px] gap-y-[20px]">
+                            <div class="flex gap-x-[8px]">
+                                <div class="rounded-full overflow-hidden w-[58px] aspect-square shrink-0">
+                                    <img src="assets/img/user.png" alt="Principal" class="w-[58px] aspect-square">
+                                </div>
+                                <div>
+                                    <h5 class="font-semibold text-[18px] text-black mb-[4px]">Ronald Richards</h5>
+                                    <h6 class="text-edgray">Patron</h6>
+                                </div>
+                            </div>
+                            <a href="#" class="ed-btn">Message From Patron</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ABOUT SECTION END -->
+
+
+        <!-- EVENTS SECTION START -->
+        <section class="responsive-cards py-[120px] xl:py-[80px] md:py-[60px]" style="overflow: hidden;">
+            <div>
+                <!-- heading -->
+                <div class="text-center mb-[46px] lg:mb-[36px] md:mb-[26px]">
+                    <h2 class="ed-section-sub-title">Programs</h2>
+                    <h6 class="ed-section-title">Programs We Offer</h6>
+                </div>
+                <div class="cards-container">
+                    <!-- First Card -->
+                    <div class="card" style="background-image: url('assets/img/instructor-image.jpg');">
+                        <div class="card-overlay">
+                            <p class="card-subheading">IT Program</p>
+                            <h3 class="card-title">Bachelor of Science Information Technology</h3>
+                            <a href="#" class="card-button">Read More</a>
+                        </div>
+                    </div>
+
+                    <!-- Second Card -->
+                    <div class="card" style="background-image: url('assets/img/students-image.jpg');">
+                        <div class="card-overlay">
+                            <p class="card-subheading">CS Program</p>
+                            <h3 class="card-title">Bachelor of Science Computer Science</h3>
+                            <a href="#" class="card-button">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- EVENTS SECTION END -->
+
+        <!-- CTA 2 SECTION START -->
+        <section class="mt-[120px] xl:mt-[80px] md:mt-[60px]">
+            <div class="mx-[19.7%] xxxl:mx-[14.7%] xxl:mx-[9.7%] bg-[url('assets/img/cta-3-bg.jpg')] bg-no-repeat bg-cover bg-center rounded-[20px] overflow-hidden py-[120px] xl:py-[80px] md:py-[60px] relative z-[1] before:absolute before:inset-0 before:bg-edpurple/80 before:-z-[1]"
+                style="padding:50px; margin-bottom: 100px;">
+
+                <div class="">
+                    <h6 class="ed-section-sub-title ed-section-sub-title--white mr-[48px]">CITSA MEMBERS</h6>
+                    <h2 class="ed-section-title !text-white mb-[18px]" style="font-size: clamp(14px, 4.5vw, 50px);">Are
+                        you a CITSA member?</h2>
+                    <p style="margin-bottom: 20px; color: #fff;" style="font-size: clamp(8px, 4.5vw, 14px);">We have
+                        new features to our website for you. Log in to
+                        our portal
+                        where you can submit and
+                        request internship letters, get news, check timetables, pay and review dues.</p>
+                    <a href="course-grid.html" style="float: right;"
+                        class="ed-btn !h-[56px] !bg-white !text-black gap-[10px] hover:!bg-edblue hover:!text-white">Sign
+                        In <span class="icon"><i class="fa-solid fa-arrow-right-long"></i></span></a>
+                </div>
+            </div>
+        </section>
+        <!-- CTA 2 SECTION END -->
+
+
+        <!-- INSTRUCTORS SECTION START -->
+        <section class=" py-[120px] xl:py-[80px] md:py-[60px] relative z-[1] overflow-hidden"
+            style="background-color: rgba(1, 178, 240, 0.1);">
+            <div class="mx-[19.7%] xxxl:mx-[14.7%] xxl:mx-[9.7%] xl:mx-[3.2%] md:mx-[15px]">
+                <!-- heading -->
+                <div class="text-center mb-[46px] lg:mb-[36px] md:mb-[26px]">
+                    <h2 class="ed-section-sub-title">Executives</h2>
+                    <h6 class="ed-section-title">Our Executives</h6>
+                </div>
+
+                <!-- instructor cards -->
+                <div class="executives">
+                    <!-- single instructor -->
+                    <div class="text-center group">
+                        <!-- img -->
+                        <div class="relative mb-[18px] overflow-hidden rounded-[12px]">
+                            <img src="assets/img/instructor-1.jpg" alt="instructor image"
+                                class="w-full aspect-[270/320] object-cover group-hover:scale-110">
+                            <!-- socials -->
+                            <div
+                                class="et-member-socials absolute right-[20px] md:right-[15px] top-[20px] md:top-[15px] z-[1]">
+                                <div
+                                    class="et-member-socials__icon w-[40px] md:w-[35px] aspect-square rounded-full border border-white flex items-center justify-center group-hover:bg-white">
+                                    <svg width="17" height="20" viewBox="0 0 13 14" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M9.89361 9.41703C9.22284 9.41703 8.61849 9.70668 8.19906 10.1675L4.42637 7.83088C4.52995 7.56611 4.58305 7.28429 4.58294 6.99999C4.58307 6.71568 4.52997 6.43386 4.42637 6.16909L8.19906 3.83238C8.61851 4.29318 9.22284 4.58297 9.89361 4.58297C11.1572 4.58297 12.1851 3.55501 12.1851 2.29143C12.1851 1.02785 11.1572 0 9.89361 0C8.63005 0 7.60209 1.02796 7.60209 2.29154C7.60204 2.57583 7.65514 2.85763 7.75866 3.1224L3.98608 5.45903C3.56663 4.99824 2.96231 4.70845 2.29154 4.70845C1.02796 4.70845 0 5.73652 0 6.99999C0 8.26354 1.02796 9.29152 2.29154 9.29152C2.96228 9.29152 3.56666 9.00185 3.98608 8.54094L7.75869 10.8776C7.65515 11.1424 7.60204 11.4242 7.60209 11.7085C7.60209 12.972 8.63003 14 9.89361 14C11.1572 14 12.1851 12.972 12.1851 11.7086C12.1851 10.445 11.1572 9.41703 9.89361 9.41703ZM8.43766 2.29154C8.43766 1.48873 9.09082 0.835596 9.89361 0.835596C10.6964 0.835596 11.3495 1.48873 11.3495 2.29154C11.3495 3.09435 10.6964 3.74748 9.89361 3.74748C9.09079 3.74748 8.43766 3.09432 8.43766 2.29154ZM2.29154 8.45593C1.48862 8.45593 0.835487 7.80277 0.835487 6.99999C0.835487 6.1972 1.48862 5.54404 2.29154 5.54404C3.09435 5.54404 3.74737 6.1972 3.74737 6.99999C3.74737 7.80277 3.09432 8.45593 2.29154 8.45593ZM8.43766 11.7085C8.43766 10.9057 9.09082 10.2525 9.89361 10.2525C10.6964 10.2525 11.3495 10.9057 11.3495 11.7084C11.3495 12.5112 10.6964 13.1644 9.89361 13.1644C9.09079 13.1644 8.43766 12.5112 8.43766 11.7084V11.7085Z"
+                                            class="fill-white group-hover:fill-edpurple duration-[400ms]" />
+                                    </svg>
+                                </div>
+                                <div
+                                    class="et-speaker__socials flex flex-col gap-[8px] absolute -z-[2] text-[14px] opacity-0 transition duration-[400ms] top-[calc(100%+8px)] -translate-y-[50px] group-hover:translate-y-0 group-hover:opacity-100">
+                                    <a href="#"
+                                        class="border bg-white text-[18px] text-edpurple w-[40px] md:w-[35px] aspect-square flex items-center justify-center rounded-full hover:border-edpurple hover:bg-transparent"><i
+                                            class="fa-brands fa-facebook-f"></i></a>
+                                    <a href="#"
+                                        class="border bg-white text-[18px] text-edpurple w-[40px] md:w-[35px] aspect-square flex items-center justify-center rounded-full hover:border-edpurple hover:bg-transparent"><i
+                                            class="fa-brands fa-linkedin-in"></i></a>
+                                    <a href="#"
+                                        class="border bg-white text-[18px] text-edpurple w-[40px] md:w-[35px] aspect-square flex items-center justify-center rounded-full hover:border-edpurple hover:bg-transparent"><i
+                                            class="fa-brands fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- txt -->
+                        <div>
+                            <h6 class="font-semibold text-[18px] text-edblue mb-[12px]"><a href="teacher-details.html"
+                                    class="hover:text-edyellow">Brooklyn Simmons</a></h6>
+                            <span class="text-edgray">Digital Expert</span>
+                        </div>
+                    </div>
+
+                    <!-- single instructor -->
+                    <div class="text-center group">
+                        <!-- img -->
+                        <div class="relative mb-[18px] overflow-hidden rounded-[12px]">
+                            <img src="assets/img/instructor-2.jpg" alt="instructor image"
+                                class="w-full aspect-[270/320] object-cover group-hover:scale-110">
+                            <!-- socials -->
+                            <div
+                                class="et-member-socials absolute right-[20px] md:right-[15px] top-[20px] md:top-[15px] z-[1]">
+                                <div
+                                    class="et-member-socials__icon w-[40px] md:w-[35px] aspect-square rounded-full border border-white flex items-center justify-center group-hover:bg-white">
+                                    <svg width="17" height="20" viewBox="0 0 13 14" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M9.89361 9.41703C9.22284 9.41703 8.61849 9.70668 8.19906 10.1675L4.42637 7.83088C4.52995 7.56611 4.58305 7.28429 4.58294 6.99999C4.58307 6.71568 4.52997 6.43386 4.42637 6.16909L8.19906 3.83238C8.61851 4.29318 9.22284 4.58297 9.89361 4.58297C11.1572 4.58297 12.1851 3.55501 12.1851 2.29143C12.1851 1.02785 11.1572 0 9.89361 0C8.63005 0 7.60209 1.02796 7.60209 2.29154C7.60204 2.57583 7.65514 2.85763 7.75866 3.1224L3.98608 5.45903C3.56663 4.99824 2.96231 4.70845 2.29154 4.70845C1.02796 4.70845 0 5.73652 0 6.99999C0 8.26354 1.02796 9.29152 2.29154 9.29152C2.96228 9.29152 3.56666 9.00185 3.98608 8.54094L7.75869 10.8776C7.65515 11.1424 7.60204 11.4242 7.60209 11.7085C7.60209 12.972 8.63003 14 9.89361 14C11.1572 14 12.1851 12.972 12.1851 11.7086C12.1851 10.445 11.1572 9.41703 9.89361 9.41703ZM8.43766 2.29154C8.43766 1.48873 9.09082 0.835596 9.89361 0.835596C10.6964 0.835596 11.3495 1.48873 11.3495 2.29154C11.3495 3.09435 10.6964 3.74748 9.89361 3.74748C9.09079 3.74748 8.43766 3.09432 8.43766 2.29154ZM2.29154 8.45593C1.48862 8.45593 0.835487 7.80277 0.835487 6.99999C0.835487 6.1972 1.48862 5.54404 2.29154 5.54404C3.09435 5.54404 3.74737 6.1972 3.74737 6.99999C3.74737 7.80277 3.09432 8.45593 2.29154 8.45593ZM8.43766 11.7085C8.43766 10.9057 9.09082 10.2525 9.89361 10.2525C10.6964 10.2525 11.3495 10.9057 11.3495 11.7084C11.3495 12.5112 10.6964 13.1644 9.89361 13.1644C9.09079 13.1644 8.43766 12.5112 8.43766 11.7084V11.7085Z"
+                                            class="fill-white group-hover:fill-edpurple duration-[400ms]" />
+                                    </svg>
+                                </div>
+                                <div
+                                    class="et-speaker__socials flex flex-col gap-[8px] absolute -z-[2] text-[14px] opacity-0 transition duration-[400ms] top-[calc(100%+8px)] -translate-y-[50px] group-hover:translate-y-0 group-hover:opacity-100">
+                                    <a href="#"
+                                        class="border bg-white text-[18px] text-edpurple w-[40px] md:w-[35px] aspect-square flex items-center justify-center rounded-full hover:border-edpurple hover:bg-transparent"><i
+                                            class="fa-brands fa-facebook-f"></i></a>
+                                    <a href="#"
+                                        class="border bg-white text-[18px] text-edpurple w-[40px] md:w-[35px] aspect-square flex items-center justify-center rounded-full hover:border-edpurple hover:bg-transparent"><i
+                                            class="fa-brands fa-linkedin-in"></i></a>
+                                    <a href="#"
+                                        class="border bg-white text-[18px] text-edpurple w-[40px] md:w-[35px] aspect-square flex items-center justify-center rounded-full hover:border-edpurple hover:bg-transparent"><i
+                                            class="fa-brands fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- txt -->
+                        <div>
+                            <h6 class="font-semibold text-[18px] text-edblue mb-[12px]"><a href="teacher-details.html"
+                                    class="hover:text-edyellow">Leslie Alexander</a></h6>
+                            <span class="text-edgray">UI/UX Designer</span>
+                        </div>
+                    </div>
+
+                    <!-- single instructor -->
+                    <div class="text-center group">
+                        <!-- img -->
+                        <div class="relative mb-[18px] overflow-hidden rounded-[12px]">
+                            <img src="assets/img/instructor-3.jpg" alt="instructor image"
+                                class="w-full aspect-[270/320] object-cover group-hover:scale-110">
+                            <!-- socials -->
+                            <div
+                                class="et-member-socials absolute right-[20px] md:right-[15px] top-[20px] md:top-[15px] z-[1]">
+                                <div
+                                    class="et-member-socials__icon w-[40px] md:w-[35px] aspect-square rounded-full border border-white flex items-center justify-center group-hover:bg-white">
+                                    <svg width="17" height="20" viewBox="0 0 13 14" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M9.89361 9.41703C9.22284 9.41703 8.61849 9.70668 8.19906 10.1675L4.42637 7.83088C4.52995 7.56611 4.58305 7.28429 4.58294 6.99999C4.58307 6.71568 4.52997 6.43386 4.42637 6.16909L8.19906 3.83238C8.61851 4.29318 9.22284 4.58297 9.89361 4.58297C11.1572 4.58297 12.1851 3.55501 12.1851 2.29143C12.1851 1.02785 11.1572 0 9.89361 0C8.63005 0 7.60209 1.02796 7.60209 2.29154C7.60204 2.57583 7.65514 2.85763 7.75866 3.1224L3.98608 5.45903C3.56663 4.99824 2.96231 4.70845 2.29154 4.70845C1.02796 4.70845 0 5.73652 0 6.99999C0 8.26354 1.02796 9.29152 2.29154 9.29152C2.96228 9.29152 3.56666 9.00185 3.98608 8.54094L7.75869 10.8776C7.65515 11.1424 7.60204 11.4242 7.60209 11.7085C7.60209 12.972 8.63003 14 9.89361 14C11.1572 14 12.1851 12.972 12.1851 11.7086C12.1851 10.445 11.1572 9.41703 9.89361 9.41703ZM8.43766 2.29154C8.43766 1.48873 9.09082 0.835596 9.89361 0.835596C10.6964 0.835596 11.3495 1.48873 11.3495 2.29154C11.3495 3.09435 10.6964 3.74748 9.89361 3.74748C9.09079 3.74748 8.43766 3.09432 8.43766 2.29154ZM2.29154 8.45593C1.48862 8.45593 0.835487 7.80277 0.835487 6.99999C0.835487 6.1972 1.48862 5.54404 2.29154 5.54404C3.09435 5.54404 3.74737 6.1972 3.74737 6.99999C3.74737 7.80277 3.09432 8.45593 2.29154 8.45593ZM8.43766 11.7085C8.43766 10.9057 9.09082 10.2525 9.89361 10.2525C10.6964 10.2525 11.3495 10.9057 11.3495 11.7084C11.3495 12.5112 10.6964 13.1644 9.89361 13.1644C9.09079 13.1644 8.43766 12.5112 8.43766 11.7084V11.7085Z"
+                                            class="fill-white group-hover:fill-edpurple duration-[400ms]" />
+                                    </svg>
+                                </div>
+                                <div
+                                    class="et-speaker__socials flex flex-col gap-[8px] absolute -z-[2] text-[14px] opacity-0 transition duration-[400ms] top-[calc(100%+8px)] -translate-y-[50px] group-hover:translate-y-0 group-hover:opacity-100">
+                                    <a href="#"
+                                        class="border bg-white text-[18px] text-edpurple w-[40px] md:w-[35px] aspect-square flex items-center justify-center rounded-full hover:border-edpurple hover:bg-transparent"><i
+                                            class="fa-brands fa-facebook-f"></i></a>
+                                    <a href="#"
+                                        class="border bg-white text-[18px] text-edpurple w-[40px] md:w-[35px] aspect-square flex items-center justify-center rounded-full hover:border-edpurple hover:bg-transparent"><i
+                                            class="fa-brands fa-linkedin-in"></i></a>
+                                    <a href="#"
+                                        class="border bg-white text-[18px] text-edpurple w-[40px] md:w-[35px] aspect-square flex items-center justify-center rounded-full hover:border-edpurple hover:bg-transparent"><i
+                                            class="fa-brands fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- txt -->
+                        <div>
+                            <h6 class="font-semibold text-[18px] text-edblue mb-[12px]"><a href="teacher-details.html"
+                                    class="hover:text-edyellow">Ronald Richards</a></h6>
+                            <span class="text-edgray">WordPress Expert</span>
+                        </div>
+                    </div>
+
+                    <!-- single instructor -->
+                    <div class="text-center group">
+                        <!-- img -->
+                        <div class="relative mb-[18px] overflow-hidden rounded-[12px]">
+                            <img src="assets/img/instructor-4.jpg" alt="instructor image"
+                                class="w-full aspect-[270/320] object-cover group-hover:scale-110">
+                            <!-- socials -->
+                            <div
+                                class="et-member-socials absolute right-[20px] md:right-[15px] top-[20px] md:top-[15px] z-[1]">
+                                <div
+                                    class="et-member-socials__icon w-[40px] md:w-[35px] aspect-square rounded-full border border-white flex items-center justify-center group-hover:bg-white">
+                                    <svg width="17" height="20" viewBox="0 0 13 14" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M9.89361 9.41703C9.22284 9.41703 8.61849 9.70668 8.19906 10.1675L4.42637 7.83088C4.52995 7.56611 4.58305 7.28429 4.58294 6.99999C4.58307 6.71568 4.52997 6.43386 4.42637 6.16909L8.19906 3.83238C8.61851 4.29318 9.22284 4.58297 9.89361 4.58297C11.1572 4.58297 12.1851 3.55501 12.1851 2.29143C12.1851 1.02785 11.1572 0 9.89361 0C8.63005 0 7.60209 1.02796 7.60209 2.29154C7.60204 2.57583 7.65514 2.85763 7.75866 3.1224L3.98608 5.45903C3.56663 4.99824 2.96231 4.70845 2.29154 4.70845C1.02796 4.70845 0 5.73652 0 6.99999C0 8.26354 1.02796 9.29152 2.29154 9.29152C2.96228 9.29152 3.56666 9.00185 3.98608 8.54094L7.75869 10.8776C7.65515 11.1424 7.60204 11.4242 7.60209 11.7085C7.60209 12.972 8.63003 14 9.89361 14C11.1572 14 12.1851 12.972 12.1851 11.7086C12.1851 10.445 11.1572 9.41703 9.89361 9.41703ZM8.43766 2.29154C8.43766 1.48873 9.09082 0.835596 9.89361 0.835596C10.6964 0.835596 11.3495 1.48873 11.3495 2.29154C11.3495 3.09435 10.6964 3.74748 9.89361 3.74748C9.09079 3.74748 8.43766 3.09432 8.43766 2.29154ZM2.29154 8.45593C1.48862 8.45593 0.835487 7.80277 0.835487 6.99999C0.835487 6.1972 1.48862 5.54404 2.29154 5.54404C3.09435 5.54404 3.74737 6.1972 3.74737 6.99999C3.74737 7.80277 3.09432 8.45593 2.29154 8.45593ZM8.43766 11.7085C8.43766 10.9057 9.09082 10.2525 9.89361 10.2525C10.6964 10.2525 11.3495 10.9057 11.3495 11.7084C11.3495 12.5112 10.6964 13.1644 9.89361 13.1644C9.09079 13.1644 8.43766 12.5112 8.43766 11.7084V11.7085Z"
+                                            class="fill-white group-hover:fill-edpurple duration-[400ms]" />
+                                    </svg>
+                                </div>
+                                <div
+                                    class="et-speaker__socials flex flex-col gap-[8px] absolute -z-[2] text-[14px] opacity-0 transition duration-[400ms] top-[calc(100%+8px)] -translate-y-[50px] group-hover:translate-y-0 group-hover:opacity-100">
+                                    <a href="#"
+                                        class="border bg-white text-[18px] text-edpurple w-[40px] md:w-[35px] aspect-square flex items-center justify-center rounded-full hover:border-edpurple hover:bg-transparent"><i
+                                            class="fa-brands fa-facebook-f"></i></a>
+                                    <a href="#"
+                                        class="border bg-white text-[18px] text-edpurple w-[40px] md:w-[35px] aspect-square flex items-center justify-center rounded-full hover:border-edpurple hover:bg-transparent"><i
+                                            class="fa-brands fa-linkedin-in"></i></a>
+                                    <a href="#"
+                                        class="border bg-white text-[18px] text-edpurple w-[40px] md:w-[35px] aspect-square flex items-center justify-center rounded-full hover:border-edpurple hover:bg-transparent"><i
+                                            class="fa-brands fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- txt -->
+                        <div>
+                            <h6 class="font-semibold text-[18px] text-edblue mb-[12px]"><a href="teacher-details.html"
+                                    class="hover:text-edyellow">Kristin Watson</a></h6>
+                            <span class="text-edgray">UI Designer</span>
+                        </div>
+                    </div>
+
+
+                    <!-- single instructor -->
+                    <div class="text-center group">
+                        <!-- img -->
+                        <div class="relative mb-[18px] overflow-hidden rounded-[12px]">
+                            <img src="assets/img/instructor-2.jpg" alt="instructor image"
+                                class="w-full aspect-[270/320] object-cover group-hover:scale-110">
+                            <!-- socials -->
+                            <div
+                                class="et-member-socials absolute right-[20px] md:right-[15px] top-[20px] md:top-[15px] z-[1]">
+                                <div
+                                    class="et-member-socials__icon w-[40px] md:w-[35px] aspect-square rounded-full border border-white flex items-center justify-center group-hover:bg-white">
+                                    <svg width="17" height="20" viewBox="0 0 13 14" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M9.89361 9.41703C9.22284 9.41703 8.61849 9.70668 8.19906 10.1675L4.42637 7.83088C4.52995 7.56611 4.58305 7.28429 4.58294 6.99999C4.58307 6.71568 4.52997 6.43386 4.42637 6.16909L8.19906 3.83238C8.61851 4.29318 9.22284 4.58297 9.89361 4.58297C11.1572 4.58297 12.1851 3.55501 12.1851 2.29143C12.1851 1.02785 11.1572 0 9.89361 0C8.63005 0 7.60209 1.02796 7.60209 2.29154C7.60204 2.57583 7.65514 2.85763 7.75866 3.1224L3.98608 5.45903C3.56663 4.99824 2.96231 4.70845 2.29154 4.70845C1.02796 4.70845 0 5.73652 0 6.99999C0 8.26354 1.02796 9.29152 2.29154 9.29152C2.96228 9.29152 3.56666 9.00185 3.98608 8.54094L7.75869 10.8776C7.65515 11.1424 7.60204 11.4242 7.60209 11.7085C7.60209 12.972 8.63003 14 9.89361 14C11.1572 14 12.1851 12.972 12.1851 11.7086C12.1851 10.445 11.1572 9.41703 9.89361 9.41703ZM8.43766 2.29154C8.43766 1.48873 9.09082 0.835596 9.89361 0.835596C10.6964 0.835596 11.3495 1.48873 11.3495 2.29154C11.3495 3.09435 10.6964 3.74748 9.89361 3.74748C9.09079 3.74748 8.43766 3.09432 8.43766 2.29154ZM2.29154 8.45593C1.48862 8.45593 0.835487 7.80277 0.835487 6.99999C0.835487 6.1972 1.48862 5.54404 2.29154 5.54404C3.09435 5.54404 3.74737 6.1972 3.74737 6.99999C3.74737 7.80277 3.09432 8.45593 2.29154 8.45593ZM8.43766 11.7085C8.43766 10.9057 9.09082 10.2525 9.89361 10.2525C10.6964 10.2525 11.3495 10.9057 11.3495 11.7084C11.3495 12.5112 10.6964 13.1644 9.89361 13.1644C9.09079 13.1644 8.43766 12.5112 8.43766 11.7084V11.7085Z"
+                                            class="fill-white group-hover:fill-edpurple duration-[400ms]" />
+                                    </svg>
+                                </div>
+                                <div
+                                    class="et-speaker__socials flex flex-col gap-[8px] absolute -z-[2] text-[14px] opacity-0 transition duration-[400ms] top-[calc(100%+8px)] -translate-y-[50px] group-hover:translate-y-0 group-hover:opacity-100">
+                                    <a href="#"
+                                        class="border bg-white text-[18px] text-edpurple w-[40px] md:w-[35px] aspect-square flex items-center justify-center rounded-full hover:border-edpurple hover:bg-transparent"><i
+                                            class="fa-brands fa-facebook-f"></i></a>
+                                    <a href="#"
+                                        class="border bg-white text-[18px] text-edpurple w-[40px] md:w-[35px] aspect-square flex items-center justify-center rounded-full hover:border-edpurple hover:bg-transparent"><i
+                                            class="fa-brands fa-linkedin-in"></i></a>
+                                    <a href="#"
+                                        class="border bg-white text-[18px] text-edpurple w-[40px] md:w-[35px] aspect-square flex items-center justify-center rounded-full hover:border-edpurple hover:bg-transparent"><i
+                                            class="fa-brands fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- txt -->
+                        <div>
+                            <h6 class="font-semibold text-[18px] text-edblue mb-[12px]"><a href="teacher-details.html"
+                                    class="hover:text-edyellow">Leslie Alexander</a></h6>
+                            <span class="text-edgray">UI/UX Designer</span>
+                        </div>
+                    </div>
+
+                    <!-- single instructor -->
+                    <div class="text-center group">
+                        <!-- img -->
+                        <div class="relative mb-[18px] overflow-hidden rounded-[12px]">
+                            <img src="assets/img/instructor-3.jpg" alt="instructor image"
+                                class="w-full aspect-[270/320] object-cover group-hover:scale-110">
+                            <!-- socials -->
+                            <div
+                                class="et-member-socials absolute right-[20px] md:right-[15px] top-[20px] md:top-[15px] z-[1]">
+                                <div
+                                    class="et-member-socials__icon w-[40px] md:w-[35px] aspect-square rounded-full border border-white flex items-center justify-center group-hover:bg-white">
+                                    <svg width="17" height="20" viewBox="0 0 13 14" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M9.89361 9.41703C9.22284 9.41703 8.61849 9.70668 8.19906 10.1675L4.42637 7.83088C4.52995 7.56611 4.58305 7.28429 4.58294 6.99999C4.58307 6.71568 4.52997 6.43386 4.42637 6.16909L8.19906 3.83238C8.61851 4.29318 9.22284 4.58297 9.89361 4.58297C11.1572 4.58297 12.1851 3.55501 12.1851 2.29143C12.1851 1.02785 11.1572 0 9.89361 0C8.63005 0 7.60209 1.02796 7.60209 2.29154C7.60204 2.57583 7.65514 2.85763 7.75866 3.1224L3.98608 5.45903C3.56663 4.99824 2.96231 4.70845 2.29154 4.70845C1.02796 4.70845 0 5.73652 0 6.99999C0 8.26354 1.02796 9.29152 2.29154 9.29152C2.96228 9.29152 3.56666 9.00185 3.98608 8.54094L7.75869 10.8776C7.65515 11.1424 7.60204 11.4242 7.60209 11.7085C7.60209 12.972 8.63003 14 9.89361 14C11.1572 14 12.1851 12.972 12.1851 11.7086C12.1851 10.445 11.1572 9.41703 9.89361 9.41703ZM8.43766 2.29154C8.43766 1.48873 9.09082 0.835596 9.89361 0.835596C10.6964 0.835596 11.3495 1.48873 11.3495 2.29154C11.3495 3.09435 10.6964 3.74748 9.89361 3.74748C9.09079 3.74748 8.43766 3.09432 8.43766 2.29154ZM2.29154 8.45593C1.48862 8.45593 0.835487 7.80277 0.835487 6.99999C0.835487 6.1972 1.48862 5.54404 2.29154 5.54404C3.09435 5.54404 3.74737 6.1972 3.74737 6.99999C3.74737 7.80277 3.09432 8.45593 2.29154 8.45593ZM8.43766 11.7085C8.43766 10.9057 9.09082 10.2525 9.89361 10.2525C10.6964 10.2525 11.3495 10.9057 11.3495 11.7084C11.3495 12.5112 10.6964 13.1644 9.89361 13.1644C9.09079 13.1644 8.43766 12.5112 8.43766 11.7084V11.7085Z"
+                                            class="fill-white group-hover:fill-edpurple duration-[400ms]" />
+                                    </svg>
+                                </div>
+                                <div
+                                    class="et-speaker__socials flex flex-col gap-[8px] absolute -z-[2] text-[14px] opacity-0 transition duration-[400ms] top-[calc(100%+8px)] -translate-y-[50px] group-hover:translate-y-0 group-hover:opacity-100">
+                                    <a href="#"
+                                        class="border bg-white text-[18px] text-edpurple w-[40px] md:w-[35px] aspect-square flex items-center justify-center rounded-full hover:border-edpurple hover:bg-transparent"><i
+                                            class="fa-brands fa-facebook-f"></i></a>
+                                    <a href="#"
+                                        class="border bg-white text-[18px] text-edpurple w-[40px] md:w-[35px] aspect-square flex items-center justify-center rounded-full hover:border-edpurple hover:bg-transparent"><i
+                                            class="fa-brands fa-linkedin-in"></i></a>
+                                    <a href="#"
+                                        class="border bg-white text-[18px] text-edpurple w-[40px] md:w-[35px] aspect-square flex items-center justify-center rounded-full hover:border-edpurple hover:bg-transparent"><i
+                                            class="fa-brands fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- txt -->
+                        <div>
+                            <h6 class="font-semibold text-[18px] text-edblue mb-[12px]"><a href="teacher-details.html"
+                                    class="hover:text-edyellow">Ronald Richards</a></h6>
+                            <span class="text-edgray">WordPress Expert</span>
+                        </div>
+                    </div>
+
+                    <!-- single instructor -->
+                    <div class="text-center group">
+                        <!-- img -->
+                        <div class="relative mb-[18px] overflow-hidden rounded-[12px]">
+                            <img src="assets/img/instructor-4.jpg" alt="instructor image"
+                                class="w-full aspect-[270/320] object-cover group-hover:scale-110">
+                            <!-- socials -->
+                            <div
+                                class="et-member-socials absolute right-[20px] md:right-[15px] top-[20px] md:top-[15px] z-[1]">
+                                <div
+                                    class="et-member-socials__icon w-[40px] md:w-[35px] aspect-square rounded-full border border-white flex items-center justify-center group-hover:bg-white">
+                                    <svg width="17" height="20" viewBox="0 0 13 14" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M9.89361 9.41703C9.22284 9.41703 8.61849 9.70668 8.19906 10.1675L4.42637 7.83088C4.52995 7.56611 4.58305 7.28429 4.58294 6.99999C4.58307 6.71568 4.52997 6.43386 4.42637 6.16909L8.19906 3.83238C8.61851 4.29318 9.22284 4.58297 9.89361 4.58297C11.1572 4.58297 12.1851 3.55501 12.1851 2.29143C12.1851 1.02785 11.1572 0 9.89361 0C8.63005 0 7.60209 1.02796 7.60209 2.29154C7.60204 2.57583 7.65514 2.85763 7.75866 3.1224L3.98608 5.45903C3.56663 4.99824 2.96231 4.70845 2.29154 4.70845C1.02796 4.70845 0 5.73652 0 6.99999C0 8.26354 1.02796 9.29152 2.29154 9.29152C2.96228 9.29152 3.56666 9.00185 3.98608 8.54094L7.75869 10.8776C7.65515 11.1424 7.60204 11.4242 7.60209 11.7085C7.60209 12.972 8.63003 14 9.89361 14C11.1572 14 12.1851 12.972 12.1851 11.7086C12.1851 10.445 11.1572 9.41703 9.89361 9.41703ZM8.43766 2.29154C8.43766 1.48873 9.09082 0.835596 9.89361 0.835596C10.6964 0.835596 11.3495 1.48873 11.3495 2.29154C11.3495 3.09435 10.6964 3.74748 9.89361 3.74748C9.09079 3.74748 8.43766 3.09432 8.43766 2.29154ZM2.29154 8.45593C1.48862 8.45593 0.835487 7.80277 0.835487 6.99999C0.835487 6.1972 1.48862 5.54404 2.29154 5.54404C3.09435 5.54404 3.74737 6.1972 3.74737 6.99999C3.74737 7.80277 3.09432 8.45593 2.29154 8.45593ZM8.43766 11.7085C8.43766 10.9057 9.09082 10.2525 9.89361 10.2525C10.6964 10.2525 11.3495 10.9057 11.3495 11.7084C11.3495 12.5112 10.6964 13.1644 9.89361 13.1644C9.09079 13.1644 8.43766 12.5112 8.43766 11.7084V11.7085Z"
+                                            class="fill-white group-hover:fill-edpurple duration-[400ms]" />
+                                    </svg>
+                                </div>
+                                <div
+                                    class="et-speaker__socials flex flex-col gap-[8px] absolute -z-[2] text-[14px] opacity-0 transition duration-[400ms] top-[calc(100%+8px)] -translate-y-[50px] group-hover:translate-y-0 group-hover:opacity-100">
+                                    <a href="#"
+                                        class="border bg-white text-[18px] text-edpurple w-[40px] md:w-[35px] aspect-square flex items-center justify-center rounded-full hover:border-edpurple hover:bg-transparent"><i
+                                            class="fa-brands fa-facebook-f"></i></a>
+                                    <a href="#"
+                                        class="border bg-white text-[18px] text-edpurple w-[40px] md:w-[35px] aspect-square flex items-center justify-center rounded-full hover:border-edpurple hover:bg-transparent"><i
+                                            class="fa-brands fa-linkedin-in"></i></a>
+                                    <a href="#"
+                                        class="border bg-white text-[18px] text-edpurple w-[40px] md:w-[35px] aspect-square flex items-center justify-center rounded-full hover:border-edpurple hover:bg-transparent"><i
+                                            class="fa-brands fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- txt -->
+                        <div>
+                            <h6 class="font-semibold text-[18px] text-edblue mb-[12px]"><a href="teacher-details.html"
+                                    class="hover:text-edyellow">Kristin Watson</a></h6>
+                            <span class="text-edgray">UI Designer</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- INSTRUCTORS SECTION END -->
+
+
+
+
+
+        <!-- NEWS SECTION START -->
+        <section class="pt-[120px] xl:pt-[80px] md:pt-[60px]" style="margin-bottom: 120px;">
+            <div class="mx-[19.7%] xxxl:mx-[14.7%] xxl:mx-[9.7%] ">
+                <!-- heading -->
+                <div class="flex flex-wrap items-end justify-between mb-[60px] lg:mb-[40px] gap-[15px]">
+                    <!-- left -->
+                    <div class="max-w-[35%] md:max-w-[40%] sm:max-w-none">
+                        <h6 class="ed-section-sub-title">latest news</h6>
+                        <h2 class="ed-section-title">our latest news & Announcements </h2>
+                    </div>
+
+                    <!-- right -->
+                    <a href="news-grid.html"
+                        class="ed-btn !h-[56px] gap-[10px] border border-[#E5E5E5] !bg-transparent !text-edpurple hover:!bg-edpurple hover:!border-edpurple hover:!text-white">View
+                        all blog <span><i class="fa-solid fa-arrow-right-long"></i></span></a>
+                </div>
+
+                <!-- news cards -->
+                <div class="grid grid-cols-2 md:grid-cols-1 gap-[30px]">
+                    <!-- news big card -->
+                    <div class="rounded-[20px] bg-edoffwhite overflow-hidden">
+                        <!-- img -->
+                        <div class="relative">
+                            <img src="assets/img/blog-big.jpg" alt="blog cover" class="w-full aspect-[570/290]">
+                            <!-- date -->
+                            <div
+                                class="absolute top-[30px] left-[30px] bg-[#ECF0F5] rounded-[10px] font-medium text-[14px] text-black inline-block uppercase overflow-hidden text-center">
+                                <span class="bg-edpurple text-white block py-[3px] rounded-[10px]">10</span>
+                                <span class="px-[11px] py-[2px] block">June</span>
+                            </div>
+                        </div>
+
+                        <!-- txt -->
+                        <div class="px-[30px] xxs:px-[20px] py-[22px] pt-[27px]">
+                            <!-- infos -->
+                            <div class="flex items-center gap-[16px] mb-[9px]">
+                                <!-- single info -->
+                                <div class="flex items-center gap-[10px] font-medium text-[12px] text-edgray">
+                                    <span><img src="assets/img/icon/user-filled-purple.svg" alt="icon"></span>
+                                    <span>By Admin</span>
+                                </div>
+
+                                <!-- single info -->
+                                <div class="flex items-center gap-[10px] font-medium text-[12px] text-edgray">
+                                    <span><img src="assets/img/icon/comment.svg" alt="icon"></span>
+                                    <span>2 Comments</span>
+                                </div>
+                            </div>
+                            <h5 class="font-medium text-[20px]"><a href="news-details.html"
+                                    class="hover:text-edpurple">Collaboratively pontificate bleeding edge resources with
+                                    inexpensive methodologies</a></h5>
+                        </div>
+                    </div>
+
+                    <!-- right / news small cards -->
+                    <div class="bg-edoffwhite rounded-[20px] p-[30px] xxs:p-[20px] space-y-[26px]">
+                        <!-- single news -->
+                        <div
+                            class="flex xxs:flex-col gap-x-[25px] gap-y-[15px] items-center xxs:items-start border-b last:border-0 pb-[26px] last:pb-0">
+                            <!-- img -->
+                            <div class="shrink-0 rounded-[10px] overflow-hidden">
+                                <img src="assets/img/news-2-img-2.jpg" alt="blog cover"
+                                    class="w-[142px] aspect-[142/153] object-cover">
+                            </div>
+
+                            <!-- txt -->
+                            <div>
+                                <!-- infos -->
+                                <div class="flex items-center gap-[16px] mb-[9px]">
+                                    <!-- single info -->
+                                    <div class="flex items-center gap-[10px] font-medium text-[12px] text-edgray">
+                                        <span><img src="assets/img/icon/user-filled-purple.svg" alt="icon"></span>
+                                        <span>By Admin</span>
+                                    </div>
+
+                                    <!-- single info -->
+                                    <div class="flex items-center gap-[10px] font-medium text-[12px] text-edgray">
+                                        <span><img src="assets/img/icon/comment.svg" alt="icon"></span>
+                                        <span>2 Comments</span>
+                                    </div>
+                                </div>
+                                <h5 class="font-medium text-[20px] mb-[17px]"><a href="news-details.html"
+                                        class="hover:text-edpurple">Collaboratively pontificate bleedi edge
+                                        resources</a></h5>
+
+                                <!-- date -->
+                                <div
+                                    class="bg-[#ECF0F5] rounded-[10px] font-medium text-[14px] text-black inline-block uppercase overflow-hidden text-center">
+                                    <span class="bg-edpurple text-white block py-[3px] rounded-[10px]">10</span>
+                                    <span class="px-[11px] py-[2px] block">June</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- single news -->
+                        <div
+                            class="flex xxs:flex-col gap-x-[25px] gap-y-[15px] items-center xxs:items-start border-b last:border-0 pb-[26px] last:pb-0">
+                            <!-- img -->
+                            <div class="shrink-0 rounded-[10px] overflow-hidden">
+                                <img src="assets/img/news-2-img-3.jpg" alt="blog cover"
+                                    class="w-[142px] aspect-[142/153] object-cover">
+                            </div>
+
+                            <!-- txt -->
+                            <div>
+                                <!-- infos -->
+                                <div class="flex items-center gap-[16px] mb-[9px]">
+                                    <!-- single info -->
+                                    <div class="flex items-center gap-[10px] font-medium text-[12px] text-edgray">
+                                        <span><img src="assets/img/icon/user-filled-purple.svg" alt="icon"></span>
+                                        <span>By Admin</span>
+                                    </div>
+
+                                    <!-- single info -->
+                                    <div class="flex items-center gap-[10px] font-medium text-[12px] text-edgray">
+                                        <span><img src="assets/img/icon/comment.svg" alt="icon"></span>
+                                        <span>2 Comments</span>
+                                    </div>
+                                </div>
+                                <h5 class="font-medium text-[20px] mb-[17px]"><a href="news-details.html"
+                                        class="hover:text-edpurple">Collaboratively pontificate bleedi edge
+                                        resources</a></h5>
+
+                                <!-- date -->
+                                <div
+                                    class="bg-[#ECF0F5] rounded-[10px] font-medium text-[14px] text-black inline-block uppercase overflow-hidden text-center">
+                                    <span class="bg-edpurple text-white block py-[3px] rounded-[10px]">10</span>
+                                    <span class="px-[11px] py-[2px] block">June</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- NEWS SECTION END -->
+    </main>
+
+    <!-- FOOTER SECTION START -->
+    <footer
+        class="bg-edblue relative z-[1] before:absolute before:inset-0 before:-z-[1] before:bg-[url('assets/img/footer-bg.jpg')] before:opacity-[7%] before:bg-no-repeat before:bg-cover before:bg-center text-white">
+        <div class="mx-[19.71%] xxxl:mx-[14.71%] xxl:mx-[9.71%] xl:mx-[5.71%] md:mx-[12px]">
+            <!-- footer top -->
+            <div class="flex flex-wrap justify-between gap-[35px] pt-[100px] pb-[58px] border-b border-white/20">
+                <!-- footer about -->
+                <div class="max-w-[370px] xxs:max-w-full">
+                    <!-- <a href="index.html" class="inline-block mb-[23px]"><img src="assets/img/logo-light.png"
+                            alt="logo"></a> -->
+                    <p class="text-[#D9D9D9] mb-[19px]">Nullam interdum libero vitae pretium aliquam donec nibh purus
+                        laoreet in ullamcorper vel malesuada sit amet enim.</p>
+
+                    <ul class="space-y-[17px]">
+                        <li class="flex items-center gap-[8px]">
+                            <span class="icon"><img src="assets/img/call-icon-yellow.svg" alt="icon"></span>
+                            <a href="tel:+233244086787" class="hover:text-edyellow">+233 244 086 787</a>
+                        </li>
+
+                        <li class="flex items-center gap-[8px]">
+                            <span class="icon"><img src="assets/img/message-yellow.svg" alt="icon"></span>
+                            <a href="mailto:secretariat.citsaucc@gmail.com"
+                                class="hover:text-edyellow">secretariat.citsaucc@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- footer widget -->
+                <div>
+                    <h6
+                        class="font-semibold text-[18px] pb-[15px] mb-[30px] relative before:absolute before:bottom-0 before:left-0 before:h-[1.5px] before:w-[20px] before:bg-edyellow after:absolute after:bottom-0 after:left-[30px] after:h-[1.5px] after:w-[63px] after:bg-white">
+                        Quick Links</h6>
+
+                    <div class="space-y-[18px]">
+                        <a href="#" class="flex items-center gap-[10px] opacity-80"><span class="icon"><img
+                                    src="assets/img/double-arrow.svg" alt="icon"></span>About</a>
+                        <a href="#" class="flex items-center gap-[10px] opacity-80"><span class="icon"><img
+                                    src="assets/img/double-arrow.svg" alt="icon"></span> Contact Us</a>
+                        <a href="#" class="flex items-center gap-[10px] opacity-80"><span class="icon"><img
+                                    src="assets/img/double-arrow.svg" alt="icon"></span> Blog & News</a>
+                        <a href="#" class="flex items-center gap-[10px] opacity-80"><span class="icon"><img
+                                    src="assets/img/double-arrow.svg" alt="icon"></span> Login /
+                            Register</a>
+                    </div>
+                </div>
+
+                <!-- footer widget -->
+                <div>
+                    <h6
+                        class="font-semibold text-[18px] pb-[15px] mb-[30px] relative before:absolute before:bottom-0 before:left-0 before:h-[1.5px] before:w-[20px] before:bg-edyellow after:absolute after:bottom-0 after:left-[30px] after:h-[1.5px] after:w-[63px] after:bg-white">
+                        Get In Touch</h6>
+
+                    <div class="space-y-[18px]">
+                        <a href="#" class="flex items-center gap-[10px] opacity-80"><span class="icon"><img
+                                    src="assets/img/double-arrow.svg" alt="icon"></span> P.O.Box 4577 UCC Campus</a>
+                        <a href="#" class="flex items-center gap-[10px] opacity-80"><span class="icon"><img
+                                    src="assets/img/double-arrow.svg" alt="icon"></span> Cape Coast, Ghana</a>
+                        <a href="#" class="flex items-center gap-[10px] opacity-80"><span class="icon"><img
+                                    src="assets/img/double-arrow.svg" alt="icon"></span> Phone: 0244086787</a>
+                        <!-- <a href="#" class="flex items-center gap-[10px] opacity-80"><span class="icon"><img
+                                    src="assets/img/double-arrow.svg" alt="icon"></span> Email:
+                            secretariat.citsaucc@gmail.com</a> -->
+                    </div>
+                </div>
+
+                <!-- footer widget -->
+                <div class="max-w-[300px]">
+                    <h6
+                        class="font-semibold text-[18px] pb-[15px] mb-[30px] relative before:absolute before:bottom-0 before:left-0 before:h-[1.5px] before:w-[20px] before:bg-edyellow after:absolute after:bottom-0 after:left-[30px] after:h-[1.5px] after:w-[63px] after:bg-white">
+                        Newsletter</h6>
+
+                    <div>
+                        <p class="text-[#d9d9d9]/80 mb-[21px]">Sign up to seargin weekly newsletter to get the latest
+                            updates.</p>
+
+                        <!-- newsltr form -->
+                        <form class="border border-white/20 rounded-full flex h-[56px] p-[4px]">
+                            <input type="email" name="email" placeholder="Enter Email Address"
+                                class="text-[14px] bg-transparent w-full rounded-full focus:outline-none px-[20px]">
+                            <button
+                                class="bg-edyellow rounded-full aspect-square flex items-center justify-center hover:bg-edpurple"><img
+                                    src="assets/img/icon/submit-icon.svg" alt="icon"></button>
+                        </form>
+
+                        <!-- social links -->
+                        <div class="flex gap-[20px] mt-[30px]">
+                            <span
+                                class="pl-[30px] font-medium text-[#d9d9d9] relative before:absolute before:left-0 before:top-[50%] before:-translate-y-[50%] before:h-[1px] before:w-[20px] before:bg-[#d9d9d9]">Follow
+                                on</span>
+                            <span class="inline-flex gap-[16px] text-[#d9d9d9]">
+                                <a href="#" class="hover:text-edyellow"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="#" class="hover:text-edyellow"><i class="fa-brands fa-x-twitter"></i></a>
+                                <a href="#" class="hover:text-edyellow"><i class="fa-brands fa-linkedin-in"></i></a>
+                                <a href="#" class="hover:text-edyellow"><i class="fa-brands fa-youtube"></i></a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- footer bottom -->
+            <div class="flex flex-wrap items-center justify-between gap-[15px] pt-[20px] pb-[50px] text-[#d9d9d9]">
+                <p>&copy; All Copyright 2024 by CITSA - UCC</p>
+
+                <div class="flex flex-wrap gap-[40px] xxs:gap-[15px]">
+                    <a href="#" class="hover:text-edyellow">Terms & Conditions</a>
+                    <a href="#" class="hover:text-edyellow">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- FOOTER SECTION END -->
+
+
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/fslightbox/fslightbox.js"></script>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
